@@ -1,8 +1,8 @@
 # Fabric4PBFT
 
-Fabric4PBFT 是一个面向实验教学的 Hyperledger Fabric 审计交易项目。项目只使用 TypeScript/JavaScript 和 Go 两类语言：TypeScript 负责 PBFT-style 仿真、Fabric 调用脚本、批量 workload 和结果分析；Go 只负责 Fabric 链码。
+Fabric4PBFT 是一个实验教学的 Hyperledger Fabric 审计交易项目。项目使用 TypeScript/JavaScript 和 Go 语言：TypeScript 负责 PBFT-style 仿真、Fabric 调用脚本、批量 workload 和结果分析；Go 负责 Fabric 链码。
 
-必须先讲清楚：本项目不是“在链码里实现 PBFT”。Fabric 链码属于业务逻辑层，负责写入和查询账本状态；PBFT/BFT 属于排序和共识层。本项目用 TypeScript 写 PBFT-style simulator 来讲解 pre-prepare、prepare、commit，用 Docker Fabric + Go 链码来真实记录审计交易和 metadata。
+Fabric 链码属于业务逻辑层，负责写入和查询账本状态；PBFT/BFT 属于排序和共识层。本项目用 TypeScript 写 PBFT-style simulator 来讲解 pre-prepare、prepare、commit，用 Docker Fabric + Go 链码来真实记录审计交易和 metadata。
 
 ## 1. 项目结构
 
