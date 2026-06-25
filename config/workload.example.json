@@ -1,0 +1,11 @@
+{
+  "description": "The workload script is configured by environment variables rather than this file. This JSON is a teaching reference.",
+  "env": {
+    "ROUNDS": 5,
+    "CLIENTS_PER_ROUND": 10,
+    "CONCURRENCY": 4,
+    "SHARD_COUNT": 2,
+    "METADATA_BYTES": 256
+  },
+  "exampleCommand": "ROUNDS=10 CLIENTS_PER_ROUND=20 CONCURRENCY=8 npm run fabric:workload"
+}
