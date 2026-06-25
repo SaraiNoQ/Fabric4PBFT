@@ -1,0 +1,26 @@
+{
+  "name": "fabric4pbft",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Teaching-oriented Hyperledger Fabric audit-chaincode and PBFT-style simulation project written in TypeScript and Go.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "pbft:demo": "tsx src/pbft/demo.ts",
+    "fabric:network:up": "tsx src/fabric/network.ts up",
+    "fabric:network:down": "tsx src/fabric/network.ts down",
+    "fabric:deploy": "tsx src/fabric/deploy.ts",
+    "fabric:invoke": "tsx src/fabric/invokeOne.ts",
+    "fabric:query": "tsx src/fabric/query.ts",
+    "fabric:workload": "tsx src/fabric/workload.ts",
+    "metrics:analyze": "tsx src/metrics/analyze.ts"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
